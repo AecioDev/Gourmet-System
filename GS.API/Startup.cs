@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using GS.API.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace GS.API
 {
@@ -32,6 +34,10 @@ namespace GS.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "GS.API", Version = "v1" });
             });
+
+            services.AddDbContext<Postgre_Context>(options =>
+                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"),
+                options => options.SetPostgresVersion(new Version(9, 6))));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,7 +50,7 @@ namespace GS.API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "GS.API v1"));
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
