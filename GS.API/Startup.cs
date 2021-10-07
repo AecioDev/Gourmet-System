@@ -38,6 +38,8 @@ namespace GS.API
             services.AddDbContext<Postgre_Context>(options =>
                 options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"),
                 options => options.SetPostgresVersion(new Version(9, 6))));
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,8 +52,11 @@ namespace GS.API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "GS.API v1"));
             }
 
+
             //app.UseHttpsRedirection();
 
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            
             app.UseRouting();
 
             app.UseAuthorization();
