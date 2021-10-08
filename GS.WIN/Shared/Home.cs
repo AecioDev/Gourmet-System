@@ -21,7 +21,7 @@ namespace GS.WIN.Shared
         private void bt_Clientes_Click(object sender, EventArgs e)
         {
             EscondeControles(true);
-            Cliente cli = new Cliente();
+            Cliente cli = new Cliente(0);
             cli.ShowDialog();
             EscondeControles(false);
         }

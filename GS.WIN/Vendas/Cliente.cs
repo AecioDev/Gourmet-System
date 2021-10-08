@@ -1,12 +1,4 @@
-﻿using GS.API.Data;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
 
 namespace GS.WIN.Vendas
@@ -16,7 +8,7 @@ namespace GS.WIN.Vendas
 
         private bool status = true;
         private int CodCli = 0;
-        private readonly ;
+        //private readonly ;
 
         public Cliente(int _codcli)
         {
@@ -30,7 +22,6 @@ namespace GS.WIN.Vendas
                 Consulta();
 
             VerStatus();
-
         }
 
         private void Consulta()

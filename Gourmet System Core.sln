@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GS.MVC", "GS.MVC\GS.MVC.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GS.Web", "GS.Web\GS.Web.csproj", "{BBBB566F-8F47-4C58-B343-C3A7E9FD2FA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GS.WIN", "GS.WIN\GS.WIN.csproj", "{7A5E4A34-EF3D-487B-AAE8-640C0F5E99F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GS.WIN", "GS.WIN\GS.WIN.csproj", "{7A5E4A34-EF3D-487B-AAE8-640C0F5E99F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GS.DAT", "GS.DAT\GS.DAT.csproj", "{1A9F6C6D-8550-4B05-ADA7-0B00A0565E86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7A5E4A34-EF3D-487B-AAE8-640C0F5E99F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A5E4A34-EF3D-487B-AAE8-640C0F5E99F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A5E4A34-EF3D-487B-AAE8-640C0F5E99F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A9F6C6D-8550-4B05-ADA7-0B00A0565E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A9F6C6D-8550-4B05-ADA7-0B00A0565E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A9F6C6D-8550-4B05-ADA7-0B00A0565E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A9F6C6D-8550-4B05-ADA7-0B00A0565E86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
